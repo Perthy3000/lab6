@@ -12,6 +12,7 @@ public class DisplayPart extends Label{
 	
 	public void update(String text) {
 		setText(text);
+		System.out.println(text);
 	}
 	
 }
