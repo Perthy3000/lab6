@@ -14,12 +14,12 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		HBox rootBox = new HBox();
-		Timer countdownTimer = new Timer("countDown", -1);
+		Timer countdownTimer = new Timer("CountDown", -1);
 		timer = countdownTimer;
-		Timer countupTimer1 = new Timer("countUp1", 1);
-		Timer countupTimer2 = new Timer("countUp2", 1);
+		Timer countupTimer1 = new Timer("CountUp1", 1);
+		Timer countupTimer2 = new Timer("CountUp2", 1);
 		rootBox.getChildren().addAll(countdownTimer.getTimerGUI(), countupTimer1.getTimerGUI(), countupTimer2.getTimerGUI());
-		Scene scene1 = new Scene(rootBox, 500, 500);
+		Scene scene1 = new Scene(rootBox, 500, 200);
 		primaryStage.setScene(scene1);
 		primaryStage.show();
 	}
